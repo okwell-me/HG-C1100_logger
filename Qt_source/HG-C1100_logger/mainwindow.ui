@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>880</width>
+    <height>510</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>880</width>
+    <height>510</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>ГОСТ тип А</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Измеритель 1.0</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>8</y>
+      <width>860</width>
+      <height>446</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_11">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="portLabel">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>17</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Порт:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="portBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>17</pointsize>
+              </font>
+             </property>
+             <property name="sizeAdjustPolicy">
+              <enum>QComboBox::AdjustToContents</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="refreshPortButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>120</horstretch>
+               <verstretch>40</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>17</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Обновить</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="connectButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>350</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>500</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>17</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Подключиться</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_4">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="sensor1Label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>220</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>17</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Датчик 1:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLCDNumber" name="sensor1DataLCD">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="digitCount">
+              <number>6</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="sensor2Label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>220</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>17</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Датчик 2:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLCDNumber" name="sensor2DataLCD">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="digitCount">
+              <number>6</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="sensor3Label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>220</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>17</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Датчик 3:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLCDNumber" name="sensor3DataLCD">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="digitCount">
+              <number>6</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="sensor4Label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>220</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>17</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Датчик 4:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLCDNumber" name="sensor4DataLCD">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="digitCount">
+              <number>6</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="Line" name="line_3">
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="modeButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>500</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>17</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Обычный</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <item>
+              <widget class="QPushButton" name="constMeasButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>160</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>17</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Однократно</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="getDataButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>17</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Измерение</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QLabel" name="settingsLabel">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>17</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Настройки</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QLabel" name="sensorNumLabel">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>17</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Номер датчика</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="sensorBox">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>17</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="koefSettingLabel">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>17</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Коэффициент</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="koefSettingLineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>17</pointsize>
+                </font>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QPushButton" name="sendButton">
+             <property name="minimumSize">
+              <size>
+               <width>180</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>500</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>17</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Отправить</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="sendDefaultButton">
+             <property name="minimumSize">
+              <size>
+               <width>180</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>500</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>17</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>По умолчанию</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_2">
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QLabel" name="koefsLabel">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>500</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>17</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Коэффициенты</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QLabel" name="koef1Label">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>17</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>K1:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="koef3Label">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>17</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>K3:</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QLabel" name="koef2Label">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>17</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>K2:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="koef4Label">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>17</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>K4:</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="saveSetsButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>17</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Сохранить коэффициенты</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>880</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
